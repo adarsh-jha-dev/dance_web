@@ -1,0 +1,58 @@
+doctype html
+html
+  head
+    title Adarsh Dance Academy 
+    style
+      include ../static/style.css
+    body
+      nav#navbar 
+        ul
+          div#logo
+            img(src="/img/3.png")
+            | ADA
+          li #[a(href="/") Home]
+          li #[a(href="/") About]
+          li #[a(href="/") Class Info]
+          li #[a(href="/") Contact Us]
+          li #[a(href="/") Services]
+      section#introSection 
+        |  Welcome to Adarsh's Dance Academy
+        div.small  Eat();Sleep();Dance();Repeat();
+      section#missionSection 
+        h2 Our Mission
+        div.card 
+          h3 Dance perfection
+          div.card-box
+            div.card-img 
+              img(src="/static/img/logo.jpg")
+
+            div.card-content 
+              p This is the best dance academy of this Universe.
+        div.card 
+          h3 Dance the way you like!
+          div.card-box
+            div.card-img 
+              img(src="/static/img/2.png")
+
+            div.card-content 
+              p This is the best dance academy of this Universe.
+        div.card 
+          h3 Expert Teaching 
+          div.card-box
+            div.card-img 
+              img(src="/static/img/3.png")
+
+            div.card-content 
+              p This is the best dance academy of this Universe.
+      section#sponsorSection 
+        h2 Our Sponsors
+        div#sponsors 
+          img(src='/img/ms.webp', alt='Sponsor Image', class="spImage")
+          img(src='/img/apple.jpg', alt='Sponsor Image', class="spImage")
+          img(src='/img/hp.png', alt='Sponsor Image', class="spImage")
+          img(src='/img/skype.png', alt='Sponsor Image', class="spImage")
+      section#footerSection 
+        | Copyright © 2019 adarshdanceacademy.com | All rights reserved 
+      
+    script
+      include ../static/index.js
